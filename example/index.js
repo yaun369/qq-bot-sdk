@@ -50,8 +50,8 @@ ws.on('PUBLIC_GUILD_MESSAGES', async (eventData) => {
   })
   console.log(data);
 });
-ws.on("GROUP", (data) => {
-  console.log("[GROUP] 事件接收 :", data);
+ws.on("GROUP_AND_C2C_EVENT", (data) => {
+  console.log("[GROUP_AND_C2C_EVENT] 事件接收 :", data);
 });
 
 
