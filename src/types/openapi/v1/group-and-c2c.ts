@@ -108,6 +108,20 @@ export interface TKeyboard {
   };
 }
 
+interface SimpleKV {
+  key: string;
+  value: string;
+}
+interface ComplexKV {
+  key: string;
+  obj: {
+    obj_kv: {
+      key: string;
+      value: string;
+    }[];
+  }[];
+}
+
 export interface TArk {
   /**
    * 模版 id，管理端可获得或内邀申请获得
@@ -119,12 +133,7 @@ export interface TArk {
    */
   template_id: number;
   /** 模版内变量与填充值的kv映射 */
-  kv:
-    | { key: string; value: string }[]
-    | {
-        key: string;
-        obj: { obj_kv: { key: string; value: string }[] }[];
-      }[];
+  kv: (SimpleKV | ComplexKV)[];
 }
 
 export interface TMedia {

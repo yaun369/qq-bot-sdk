@@ -1,6 +1,6 @@
 {
   "name": "qq-guild-bot",
-  "version": "2.10.0",
+  "version": "2.10.1",
   "description": "QQ频道机器人NodeSDK",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -82,10 +82,10 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
+    "@types/ws": "^8.2.0",
     "loglevel": "^1.8.0",
     "resty-client": "0.0.5",
-    "ws": "^7.4.4",
-    "@types/ws": "^8.2.0"
+    "ws": "^7.4.4"
   },
   "resolutions": {
     "minimist": "1.2.6",
