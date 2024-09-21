@@ -1,5 +1,5 @@
 {
-  "name": "qq-guild-bot",
+  "name": "qq-bot-node",
   "version": "2.10.1",
   "description": "QQ频道机器人NodeSDK",
   "publishConfig": {
